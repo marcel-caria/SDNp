@@ -1,0 +1,44 @@
+?SNDlib native format; type: network; version: 1.0
+# 2 segments network
+#
+#       (2)-------(0)-------(4)
+#        |         |         |
+#        |         |         |
+#        |         |         |
+#       (3)-------(1)-------(5)
+#
+
+# NODE SECTION
+
+NODES (
+  N0 ( 147.00 403.00 )	BORDERNODE
+  N1 ( 283.00 248.00 )	BORDERNODE
+  N2 ( 451.00 201.00 )
+  N3 ( 516.00 230.00 )
+  N4 ( 324.00 43.00 )
+  N5 ( 324.00 43.00 )
+)
+
+# LINK SECTION
+
+LINKS (
+  L0  ( N0 N1 )
+  L1  ( N0 N2 )
+  L2  ( N0 N4 )
+  L3  ( N1 N3 )
+  L4  ( N1 N5 )
+  L5  ( N2 N3 )
+  L6  ( N4 N5 )
+)
+
+# BORDER NODE SECTION (each line determines a vertex separator)
+
+BORDERNODES (
+  ( N0 N1 )
+)
+
+# HYBRID SDN/OSPF NODE SECTION (each line determines a set of hybrid nodes)
+
+HYBRIDNODES (
+  ( N0 N1 )
+)

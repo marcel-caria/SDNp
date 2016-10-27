@@ -1,0 +1,24 @@
+?SNDlib native format; type: network; version: 1.0
+# network ring
+
+# NODE SECTION
+
+NODES (
+  N0 ( 147.00 403.00 )	BORDERNODE
+  N1 ( 283.00 248.00 )
+  N2 ( 451.00 201.00 )
+  N3 ( 516.00 230.00 )	BORDERNODE
+  N4 ( 324.00 43.00 )
+  N5 ( 459.00 31.00 )
+)
+
+# LINK SECTION
+
+LINKS (
+  L0 ( N0 N1 )
+  L1 ( N1 N2 )
+  L2 ( N2 N3 )
+  L3 ( N3 N4 )
+  L4 ( N4 N5 )
+  L9 ( N5 N0 )
+)
